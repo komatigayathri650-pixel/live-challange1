@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f7f7;
+
+    color: #39354e;
+
+    padding: 45px 20px;
+}
+
+
+
+.fitness-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.2fr 1fr;
+
+    grid-template-rows:
+        200px
+        155px
+        155px
+        155px;
+
+    gap: 14px;
+}
+
+
+
+
+.card {
+
+    border-radius: 7px;
+
+    padding: 22px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.card h2 {
+
+    font-size: 25px;
+
+    line-height: 0.95;
+
+    margin-bottom: 12px;
+}
+
+
+.card p {
+
+    font-size: 13px;
+
+    line-height: 1.35;
+
+    color: #222124;
+}
+
+
+
+
+.card-one {
+
+    grid-column: 1;
+
+    grid-row: 1 / 3;
+
+    background: #e2c6b2;
+}
+
+
+.card-one h2 {
+
+    font-size: 27px;
+
+    margin-top: 20px;
+}
+
+
+.card-one p {
+
+    margin: 15px 0;
+}
+
+
+.card button {
+
+    border: none;
+
+    background: #f3cf83;
+
+    color: #1e1d27;
+
+    font-weight: bold;
+
+    padding: 11px 18px;
+
+    border-radius: 22px;
+
+    cursor: pointer;
+}
+
+
+.card button:hover {
+
+    transform: scale(1.04);
+}
+
+
+.exercise-icon {
+
+    position: absolute;
+
+    right: 22px;
+
+    bottom: 15px;
+
+    font-size: 55px;
+}
+
+
+.card-main {
+
+    grid-column: 2;
+
+    grid-row: 1;
+
+    background: #774ef1;
+
+    color: white;
+
+    padding: 25px;
+}
+
+
+.card-main h1 {
+
+    font-size: 39px;
+
+    margin-bottom: 7px;
+}
+
+
+.card-main h1 span {
+
+    color: #ffd052;
+}
+
+
+.card-main h3 {
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+}
+
+
+.card-main h3 i {
+
+    font-weight: normal;
+}
+
+
+.card-main p {
+
+    color: white;
+
+    font-size: 12px;
+}
+
+
+.stars {
+
+    color: #ffd052;
+
+    font-size: 18px;
+
+    margin-bottom: 7px;
+}
+
+
+
+.card-progress {
+
+    grid-column: 3;
+
+    grid-row: 1 / 3;
+
+    background: #e2d8ff;
+}
+
+
+.card-progress h2 {
+
+    font-size: 26px;
+}
+
+
+.progress-box {
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+    margin-top: 15px;
+}
+
+
+.progress-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    margin-top: 9px;
+}
+
+
+.progress-row:first-child {
+
+    margin-top: 0;
+}
+
+
+.progress-row b {
+
+    font-size: 10px;
+}
+
+
+.progress-bar {
+
+    height: 6px;
+
+    background: #eeeafa;
+
+    border-radius: 10px;
+
+    margin-top: 5px;
+}
+
+
+.fill {
+
+    height: 100%;
+
+    background: #7952d9;
+
+    border-radius: 10px;
+}
+
+
+.steps {
+    width: 84%;
+}
+
+
+.calories {
+    width: 78%;
+}
+
+
+.workouts {
+    width: 80%;
+}
+
+
+
+.chart {
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-around;
+
+    margin-top: 14px;
+}
+
+
+.chart span {
+
+    width: 10px;
+
+    background: #7650d8;
+
+    border-radius: 6px 6px 0 0;
+}
+
+
+.chart-days {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    font-size: 8px;
+
+    color: #777;
+}
+
+
+
+.card-habits {
+
+    grid-column: 1;
+
+    grid-row: 3 / 5;
+
+    background: #ffcF69;
+}
+
+
+.card-habits h2 {
+
+    font-size: 27px;
+}
+
+
+.habit-box {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 10px 13px;
+
+    margin-top: 18px;
+}
+
+
+.habit-box label {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 11px;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.habit-box label:last-child {
+
+    border-bottom: none;
+}
+
+
+.habit-box input {
+
+    accent-color: #7650d8;
+}
+
+
+
+
+.card-workouts {
+
+    grid-column: 2;
+
+    grid-row: 2;
+
+    background: white;
+}
+
+
+.small-icons {
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+
+.card-workouts h2 {
+
+    font-size: 21px;
+}
+
+
+
+
+.card-consistency {
+
+    grid-column: 2;
+
+    grid-row: 3;
+
+    background: #ffcF69;
+}
+
+
+.card-consistency h2 {
+
+    font-size: 22px;
+}
+
+
+.calendar {
+
+    background: white;
+
+    border-radius: 8px;
+
+    padding: 9px;
+
+    margin-top: 12px;
+}
+
+
+.month {
+
+    font-size: 9px;
+
+    background: #7550d9;
+
+    color: white;
+
+    padding: 6px;
+
+    border-radius: 5px;
+}
+
+
+.month span {
+
+    float: right;
+}
+
+
+.checks {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin-top: 10px;
+}
+
+
+.checks span {
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #eee8ff;
+
+    color: #7650d8;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 10px;
+}
+
+
+
+.card-growth {
+
+    grid-column: 2 / 4;
+
+    grid-row: 4;
+
+    background: #7350d8;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.growth-left {
+
+    background: white;
+
+    color: #25213d;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    width: 150px;
+}
+
+
+.growth-number {
+
+    font-size: 31px;
+
+    font-weight: bold;
+
+    color: #7350d8;
+}
+
+
+.growth-left p {
+
+    font-size: 9px;
+
+    color: #555;
+}
+
+
+.growth-right h2 {
+
+    font-size: 25px;
+}
+
+
+.growth-right p {
+
+    color: white;
+}
+
+
+
+
+.card-journey {
+
+    grid-column: 3;
+
+    grid-row: 3;
+
+    background: #e2d8ff;
+}
+
+
+.journey-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+
+.journey-info small {
+
+    display: block;
+
+    font-size: 10px;
+
+    color: #777;
+}
+
+
+.journey-info strong {
+
+    font-size: 18px;
+}
+
+
+.journey-bar {
+
+    height: 10px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    margin-top: 18px;
+}
+
+
+.journey-bar div {
+
+    width: 78%;
+
+    height: 100%;
+
+    background: #7350d8;
+
+    border-radius: 20px;
+}
+
+
+
+
+.card-bottom {
+
+    display: none;
+}
+
+
+
+#message {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    background: #28243d;
+
+    color: white;
+
+    padding: 14px 20px;
+
+    border-radius: 8px;
+
+    display: none;
+
+    z-index: 100;
+}
+
+
+#message.show {
+
+    display: block;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .fitness-container {
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: auto;
+
+    }
+
+
+    .card-one,
+    .card-main,
+    .card-progress,
+    .card-habits,
+    .card-workouts,
+    .card-consistency,
+    .card-growth,
+    .card-journey {
+
+        grid-column: auto;
+
+        grid-row: auto;
+
+    }
+
+
+    .card-growth {
+
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    body {
+
+        padding: 20px 10px;
+    }
+
+
+    .fitness-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .card-growth {
+
+        grid-column: auto;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
